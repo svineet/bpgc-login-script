@@ -11,8 +11,8 @@ from gi.repository import Notify
 
 Notify.init ("Auto login")
 LOGIN_URL = "https://campnet.bits-goa.ac.in:8090/login.xml"
-USERNAME = "f20180168"
-PASSWORD = ""
+USERNAME = config.USERNAME
+PASSWORD = config.PASSWORD
 
 def show_notification(message):
     notif = Notify.Notification.new ("Auto login script",
